@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <img class="logo" src="./images/logo.png" alt="" />
+      </div>
+    </header>
+
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./images/video2.mp4" type="video/mp4" />
+      </video>
+      <div class="nav">
+        <a href="">Calendar</a>
+        <a href="">Gallery</a>
+        <a href="">About</a>
+        <a href="">Special Events</a>
+      </div>
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 255 -140"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+    <div class="two">
+      <div class="underground"> An one-of-a-kind underground party experience</div>
+      <div class="parking">Find <br> <i class="fa-solid fa-car" style="color: #ffffff;"></i> <br> Parking</div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
