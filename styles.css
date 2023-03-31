@@ -40,7 +40,7 @@ ul {
   justify-content: space-between;
 }
 
-a {
+.nav a {
   font-size: 24px;
   font-family: "Bungee Hairline", Courier, monospace;
   color: white;
@@ -49,12 +49,16 @@ a {
   margin: 10px;
 }
 
+ .nav a:hover{
+    font-weight: 800;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  background-color: rgba(30, 1, 46, 0.792);
+  background-color: rgba(30, 1, 46, 0.174);
   backdrop-filter: blur(20px);
 }
 
@@ -146,4 +150,137 @@ body {
   text-align: center;
 
   user-select: none;
+}
+
+.two{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.underground{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    padding: 35px;
+    background-color: rgba(42, 1, 74, 0.254);
+    font-family: "Bungee Hairline";
+    min-height: 600px;
+}
+
+.parking{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.235);
+    gap: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0;
+     
+}
+
+.parking{
+    font-size: 24px;
+    font-family: "Bungee Hairline", Courier, monospace;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+
+.parking:hover{
+    background-color: rgba(137, 43, 226, 0.286);
+    font-weight: 800;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100
+}
+
+.club-img1{
+    width: 20%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.links1{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+} 
+.links2{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+} 
+.links3{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.links li{
+    padding: 2px;
+    font-size: 15px;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.links li:hover {
+    color: rgb(161, 137, 161)
+}
+
+.fa-brands{
+    font-size: 40px;
+    color: white;
+}
+
+.fa-brands:hover{
+    color:rgb(187, 133, 237)
 }
